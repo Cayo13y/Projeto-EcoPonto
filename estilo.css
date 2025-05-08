@@ -2,20 +2,19 @@ html {
   height: 100%;
 }
 
-body {
+  body {
   min-height: 100vh;
-  height: auto;
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url('https://img.freepik.com/fotos-gratis/fundo-de-papel-de-parede-colorido-embacado-artistico_58702-8287.jpg');
+  background: url('https://img.freepik.com/fotos-gratis/fundo-de-papel-de-parede-colorido-embacado-artistico_58702-8287.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
 }
+
 
 body h1 {
 color: white;
@@ -33,10 +32,10 @@ color: white
 }
 
 .container {
-  display: flex;
+   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 900px; 
   gap: 20px;
