@@ -23,7 +23,7 @@ window.onload = function () {
   }).addTo(map);
 
   // Carrega pontos do Google Sheets e mostra no mapa
-  fetch("https://script.google.com/macros/s/AKfycbw6fq3DBl2gGF-taLWlMCNmuhIAF0bEilDd5pLy-UVl-Z4_w1eywkNazUnNm3hyfyup/exec")
+  fetch("https://script.google.com/macros/library/d/11_HBERj6mKt-679SXZOLx5hPhHW1WhFPA04MrHyCt2DtcR_ibrBhYcZL/1")
     .then(response => response.json())
     .then(pontos => {
       pontos.forEach(ponto => {
@@ -67,7 +67,7 @@ document.getElementById('add-point-form').addEventListener('submit', function (e
       const longitude = data[0].lon;
 
       // Envia os dados para o Google Sheets
-      fetch("https://script.google.com/macros/s/AKfycbw6fq3DBl2gGF-taLWlMCNmuhIAF0bEilDd5pLy-UVl-Z4_w1eywkNazUnNm3hyfyup/exec", {
+      fetch("https://script.google.com/macros/library/d/11_HBERj6mKt-679SXZOLx5hPhHW1WhFPA04MrHyCt2DtcR_ibrBhYcZL/1", {
         method: "POST",
         body: JSON.stringify({
           nome,
