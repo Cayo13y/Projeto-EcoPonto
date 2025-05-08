@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EcoPonto</title>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/157970/isolated/preview/c156b4270aea292b9b335dd463ea17eb-icone-de-planeta-terra-icone-de-terra.png" type="image/x-icon" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <h1 class="titulo">🗺️ EcoPonto 🗺️</h1>
+
+    <p>⚠️ Este é um projeto acadêmico em fase de testes sobre práticas sustentáveis. <br> As informações inseridas serão exibidas publicamente no mapa.</p> 
+
+    <div class="container">
+      <div class="form-container">
+        <form id="add-point-form">
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Nome" />
+            Nome do Local:
+          </label>
+          <input type="text" id="nome" required />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="Descrição" />
+            Descrição:
+          </label>
+          <input type="text" id="descricao" required />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/709/709586.png" alt="Categoria" />
+            Categoria:
+          </label>
+          <select id="categoria" required>
+            <option value="coleta">Coleta Seletiva</option>
+            <option value="horta">Horta Comunitária</option>
+            <option value="feira">Feira Orgânica</option>
+          </select>
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Estado" />
+            Estado:
+          </label>
+          <input type="text" id="estado" required />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Cidade" />
+            Cidade:
+          </label>
+          <input type="text" id="cidade" required />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Endereço" />
+            Endereço:
+          </label>
+          <input type="text" id="endereco" required />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/1239/1239525.png" alt="Número" />
+            Número:
+          </label>
+          <input type="text" id="numero" required />
+
+          <label>
+            <img src="https://cdn-icons-png.flaticon.com/512/1239/1239525.png" alt="CEP" />
+            CEP:
+          </label>
+          <input type="text" id="cep" required />
+
+          <button type="submit">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Adicionar" style="width: 18px; vertical-align: middle" />
+            Adicionar Ponto
+          </button>
+        </form>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
